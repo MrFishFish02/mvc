@@ -1,0 +1,15 @@
+{% extends "base.html.twig" %}
+{# templates/index.html.twig #}
+
+{% block title %}Home{% endblock %}
+{% block head %}<p style="color: #f84040">Home</p>{% endblock %}
+{% block body %}
+    <div class="center">
+        <h1>Gandalf The Grey</h1>
+        <img src="{{ asset('image/gandalf.jpg') }}"/>
+        <p>Gandalf is a protagonist in J. R. R. Tolkien's novels The Hobbit and The Lord of the Rings.
+        He is a wizard, one of the Istari order, and the leader and mentor of the Fellowship of the Ring. Tolkien took the name "Gandalf" from the Old Norse "Catalogue of Dwarves" (Dvergatal) in the Völuspá</p>
+    </div>
+{% endblock %}
+
+{% block footer %}<footer style="border-top: 3px solid #f84040;"><p>Copyright kiph21</p></footer>{% endblock %}

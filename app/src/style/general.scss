@@ -1,0 +1,123 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #111;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+    height: 100%;
+
+}
+
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+nav {
+    /* background-color: rgb(119, 180, 28); */
+    min-width: 100%;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+li > a {
+    color: $white;
+    font-size: 40px;
+    font-family: $marker-style;
+    text-decoration: none;
+    padding: 1rem;
+}
+li {
+    padding: 1rem;
+}
+
+h1,
+p {
+    color: $white;
+    font-family: $default-style;
+}
+
+p {
+    font-size: 1.7rem;
+    line-height: 1.7;
+}
+
+.li1:hover {
+    background-color: $red;
+}
+
+.li2:hover {
+    background-color: $green;
+}
+
+.li3:hover {
+    background-color: $blue;
+}
+
+.center {
+    min-height: 80vh;
+    margin: 0 auto;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 64rem;
+
+    h1 {
+        margin-bottom: 4rem;
+        font-size: 2rem;
+    }
+
+    img {
+        margin-bottom: 1rem;
+    }
+}
+
+.github-link {
+    text-decoration: none;
+    color: $blue;
+}
+
+.head {
+    height: 3rem;
+    width: 100%;
+    background-color: $azure;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    p {
+        font-size: 2.7rem;
+        font-family: $marker-style;
+    }
+}
+
+// footer
+footer {
+    // border-top: 1px solid $red;
+    margin-top: 0.5rem;
+    min-width: 100%;
+    height: 3rem;
+    // background-color: rgb(62, 62, 62);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        font-size: 1.7rem;
+        font-family: $marker-style;
+        color: $azure;
+    }
+    min-width: 100%;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="icon" href="">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+        <link href="{{ asset('styles/app.css') }}" rel="stylesheet"/>
+
+        {% block javascripts %}{% endblock %}
+    </head>
+    <body>
+        <header>
+            <div class="head">{% block head %}{% endblock %}</div>
+            <nav>
+                <ul>
+                    <li class="li1"><a href="{{ path('home') }}">Home</a></li>
+                    <li class="li2"><a href="{{ path('about') }}">About</a></li>
+                    <li class="li3"><a href="{{ path('report') }}">Report</a></li>
+                </ul>
+            </nav>
+        </header>
+        {% block body %}{% endblock %}
+
+        {% block footer %}{% endblock %}
+    </body>
+</html>

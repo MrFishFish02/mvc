@@ -1,0 +1,34 @@
+{% extends "base.html.twig" %}
+{# templates/report.html.twig #}
+
+
+{% block title %}Report{% endblock %}
+{% block head %}<p style="color: #00aeff">Report</p>{% endblock %}
+{% block body %}
+    <div class="center">
+        <h1>Kmom01</h1>
+        <h1 style="border-bottom: 3px solid #00aeff;">Berätta kort om dina förkunskaper och tidigare erfarenheter kring objektorientering.</h1>
+        <p>Jag har kört object oriented programming i både python och js. Min tolkning av det hela är att man skapar object/klasser som kan lagra data, metoder och annat.</p>
+        <br><br>
+        <h1 style="border-bottom: 3px solid #00aeff;">Berätta kort om PHPs modell för klasser och objekt. Vilka är de grunder man behöver veta/förstå för att kunna komma igång och skapa sina första klasser?</h1>
+        <p>Man behöver veta först hur man definierar en klass sedan behöver man också veta hur scope fungerar. Till exempel så är viss variabler inte tillgängliga i funktioner och då kan man behöva göra dem till en global eller public variable.
+        Så att man kan komma åt den inom en funktion. Det är också viktigt att veta att man kan lagra instaner utav klasser i variabler.</p>
+        <br><br>
+        <h1 style="border-bottom: 3px solid #00aeff;">Reflektera kort över den kodbas, koden, strukturen som användes till uppgiften me/report, hur uppfattar du den?</h1>
+        <p>Strukturen var rörig i början och det var svårt att hitta rätt, fortfarande lite osäker på vad ny syftade på med att den publika webbkatalogen ska ligga i me/report/public.
+        Men ja när jag fick ordning på det hela och gjorde research själv så kunde jag skapa en bra struktur som jag är rätt nöjd med.
+        Men det går att strukurera det bättre genom att dela upp filer t.ex dela upp scss filerna bättre så att det blir lättare att veta vad som används på vilken sida.</p>
+        <br><br>
+        <h1 style="border-bottom: 3px solid #00aeff;">Med tanke på artikeln “PHP The Right Way”, vilka delar i den finner du extra intressanta och värdefulla?
+        Är det några särskilda områden som du känner att du vill veta mer om? Lyft fram några delar av artikeln som du känner mer värdefulla.</h1>
+        <p>Jag har inte läst igenom den ännu.</p>
+        <br><br>
+        <h1 style="border-bottom: 3px solid #00aeff;">Vilken är din TIL för detta kmom?</h1>
+        <p>Hur man kan använda ramverket symfony och vad ett ramverk är. Några saker som jag har lärt mig om symfony är att man kan använda "path('')" som länkar till en route MEN det är viktigt att man ger routen ett namn annars
+        fungerar det inte. En liknande sak är "asset('')" som man kan använda för att länka till en bild, stylesheet, js-fil eller något annat. Där är det också viktigt att tänka på att "asset" inte kommer kunna hitta filerna om de inte ligger i public-foldern.
+        Om man använder sig av webpack så kan man lägga dem i asset-foldern men det fungerade inte för mig även om jag kört "composer require webpack" så jag placerade dem i public mappen i stället.
+        Sedan har jag också lärt mig hur man skickar med php variabler med en funktion till t.ex en twig fil.</p>
+        <br><br>
+    </div>
+{% endblock %}
+{% block footer %}<footer style="border-top: 3px solid #00aeff;"><p>Copyright kiph21</p></footer>{% endblock %}

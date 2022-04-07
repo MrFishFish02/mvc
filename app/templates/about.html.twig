@@ -1,0 +1,17 @@
+{% extends "base.html.twig" %}
+{# templates/index.html.twig #}
+
+
+{% block title %}About{% endblock %}
+{% block head %}<p style="color: #1ac30e">About</p>{% endblock %}
+{% block body %}
+    <div class="center">
+        <h1>Om denna kurs</h1>
+        <img src="{{ asset('image/symfony.png') }}"/>
+        <p>I denna kursen skall vi lära oss programmera webbapplikationer på ett
+        objektorienterat sätt med fokus på det arkitekturella designmönstret MVC.
+        Vi kommer använda oss av Symfony som är ett utav de mer kända ramverken inom php som en bas.</p>
+        <p><a class="github-link" href="https://github.com/dbwebb-se/mvc" alt="mvc github repo">Länk till github repo  mvc</a></p>
+    </div>
+{% endblock %}
+{% block footer %}<footer style="border-top: 3px solid #1ac30e;"><p>Copyright kiph21</p></footer>{% endblock %}
