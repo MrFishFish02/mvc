@@ -1,0 +1,68 @@
+.card {
+    width: 75px;
+    height: 115px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+    border: 3px solid #111;
+}
+
+.card20 {
+    @extend .card;
+    margin-right: -15px;
+}
+// cards showcase
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 80%;
+    .all_cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        div {
+            margin: 20px;
+        }
+    }
+}
+
+.text_cen {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+
+    h1 {
+        margin: 1rem;
+    }
+}
+
+.players {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+
+    p {
+        margin: 1rem;
+        color: $green;
+    }
+}
+
+.linkscard {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: $marker-style;
+    a {
+        color: $green;
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+}

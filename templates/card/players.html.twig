@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block head %}<p style="color: #e8f80a">Players + Cards</p>{% endblock %}
+{% block title %}Game{% endblock %}
+
+{% block body %}
+<div class="text_cen">
+    <h1>Remaining cards: {{ remaining_cards }}</h1>
+</div>
+{% for index in temp %}
+    <div class="players">
+    <p>Player {{loop.index}}</p>
+    {% for i in index %}
+        <div class="card20" style="color:{{i[2]}};"><div>{{ i[0] }}</div><div>{{ i[1] }}</div></div>
+    {% endfor %}
+    </div>
+{% endfor %}
+
+
+{% endblock %}

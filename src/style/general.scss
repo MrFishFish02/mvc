@@ -64,6 +64,10 @@ p {
     background-color: $blue;
 }
 
+.li4:hover {
+    background-color: $yellow;
+}
+
 .center {
     min-height: 80vh;
     margin: 0 auto;
@@ -120,4 +124,19 @@ footer {
         color: $azure;
     }
     min-width: 100%;
+}
+
+.links {
+    color: $azure;
+    text-decoration: none;
+    font-family: $marker-style;
+
+    a {
+        font-size: 2rem;
+    }
+}
+
+.api_deck {
+    margin: 0 auto;
+    color: $white;
 }

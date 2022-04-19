@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block head %}<p style="color: #e8f80a">Deck</p>{% endblock %}
+{% block title %}DECK{% endblock %}
+
+{% block body %}
+<div class="cards">
+<div class="all_cards">
+    {% for i in all %}
+        <div class="card" style="color:{{i[2]}};"><div>{{ i[0] }}</div><div>{{ i[1] }}</div></div>
+    {% endfor %}
+    </div>
+</div>
+
+
+{% endblock %}

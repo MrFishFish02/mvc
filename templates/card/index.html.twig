@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block head %}<p style="color: #c5c827">Card</p>{% endblock %}
+{% block title %}Card{% endblock %}
+
+{% block body %}
+<div class="center">
+    <div class="linkscard">
+        <a href="{{ path('card_deck') }}">Deck<a/>
+        <a href="{{ path('deck_shuffle') }}">Shuffle<a/>
+        <a href="{{ path('deck_draw') }}">Draw<a/>
+        <a href="{{ path('player_cards') }}">Player cards<a/>
+        <a href="{{ path('card_deck2') }}">Deck2<a/>
+        <a href="{{ path('api_deck') }}">json_deck<a/>
+        <a href="{{ path('api_deck_shuffle') }}">json_shuffle<a/>
+        <a href="{{ path('deck_draw_api') }}">json_draw<a/>
+        <a href="{{ path('deck_players_api') }}">json player cards<a/>
+    </div>
+</div>
+{% endblock %}

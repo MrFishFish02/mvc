@@ -69,6 +69,10 @@ p {
   background-color: #00aeff;
 }
 
+.li4:hover {
+  background-color: #c5c827;
+}
+
 .center {
   min-height: 80vh;
   margin: 0 auto;
@@ -118,6 +122,85 @@ footer p {
   font-size: 1.7rem;
   font-family: "Permanent Marker", cursive;
   color: #f0ffff;
+}
+
+.links {
+  color: #f0ffff;
+  text-decoration: none;
+  font-family: "Permanent Marker", cursive;
+}
+.links a {
+  font-size: 2rem;
+}
+
+.api_deck {
+  margin: 0 auto;
+  color: rgb(216, 209, 209);
+}
+
+.card, .card20 {
+  width: 75px;
+  height: 115px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 25px;
+  border: 3px solid #111;
+}
+
+.card20 {
+  margin-right: -15px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 80%;
+}
+.cards .all_cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cards .all_cards div {
+  margin: 20px;
+}
+
+.text_cen {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+.text_cen h1 {
+  margin: 1rem;
+}
+
+.players {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+.players p {
+  margin: 1rem;
+  color: #1ac30e;
+}
+
+.linkscard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Permanent Marker", cursive;
+}
+.linkscard a {
+  color: #1ac30e;
+  font-size: 2rem;
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=app.css.map */
